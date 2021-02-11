@@ -1,0 +1,9 @@
+@mixin flexDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+$main-mint: #ADEFD1;
+$accent-blue: #00203F;

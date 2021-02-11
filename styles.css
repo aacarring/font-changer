@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: #ADEFD1;
+  color: #00203F;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75vw;
+  height: 20vh;
+  margin-top: 5vh;
+  text-align: center;
+}
+body .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 55vh;
+}
+body .text input {
+  width: 50vw;
+  height: 5vh;
+  font-size: 1.5em;
+  margin: auto;
+}
+body .text .output {
+  text-align: center;
+  margin: auto;
+  width: 75vw;
+  height: 30vh;
+  font-size: 3.25em;
+  word-break: break-word;
+  overflow: scroll;
+}
+body .buttons {
+  width: 50vw;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 5vh;
+}
+body .buttons button {
+  color: #ADEFD1;
+  background: #00203F;
+  width: 100px;
+  height: 25px;
+  border-radius: 15px;
+  font-family: monospace;
+  outline: none;
+  margin: 10px;
+}
+body .buttons button:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+  color: #00203F;
+  background: #ADEFD1;
+  border: 2px solid #00203F;
+}
+
+/*# sourceMappingURL=styles.css.map */
