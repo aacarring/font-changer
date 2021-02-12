@@ -15,44 +15,64 @@ body {
         @include flexDisplay();
         justify-content: space-evenly;
         width: 75vw;
-        height: 20vh;
-        margin-top: 5vh;
+        min-height: 20vh;
+        margin: 3.5vh;
         text-align: center;
+        font-family: 'Dosis', sans-serif;
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            font-weight: 600;
+            @media (max-width: 400px) {
+                font-size: 2em;
+            }
+        }
+        span {
+            font-size: 1.5em;
+            @media (max-width: 400px) {
+                font-size: 1.1em;
+            }
+        }
     }
     .text {
         @include flexDisplay();
         width: 75vw;
-        height: 55vh;
+        height: 50vh;
+        justify-content: space-evenly;
         input {
             width: 50vw;
             height: 5vh;
             font-size: 1.5em;
-            margin: auto;
+            @media (max-width: 400px) {
+                font-size: 1em;
+            }
         }
         .output {
             text-align: center;
-            margin: auto;
             width: 75vw;
-            height: 30vh;
+            min-height: 10vh;
+            max-height: 35vh;
             font-size: 3.25em;
             word-break: break-word;
             overflow: scroll;
+            @media (max-width: 400px) {
+                font-size: 2.5em;
+            }
         }
     }
     .buttons {
-        width: 50vw;
-        min-height: 10vh;
+        width: 75vw;
+        max-height: 50vh;
         @include flexDisplay();
         justify-content: space-evenly;
         flex-direction: row;
-        margin: auto;
         flex-wrap: wrap;
-        margin-bottom: 5vh;
+        margin: 3.5vh auto;
         button {
             color: $main-mint;
             background: $accent-blue;
             width: 100px;
-            height: 25px;
+            height: 35px;
             border-radius: 15px;
             font-family: monospace;
             outline: none;
